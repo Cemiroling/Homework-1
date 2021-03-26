@@ -18,11 +18,11 @@ public class BinarySearch {
                 return -1;
             }
             if (value < ms[middle]) {
-                logger.info("Value is lower" + value + "<" + ms[middle]);
+                logger.info("Value is lower: " + value + "<" + ms[middle]);
                 return Search(ms, startIndex, middle - 1, value);
             }
             if (value > ms[middle]) {
-                logger.info("Value is higher" + value + ">" + ms[middle]);
+                logger.info("Value is higher: " + value + ">" + ms[middle]);
                 return Search(ms, middle + 1, endIndex, value);
             }
         }

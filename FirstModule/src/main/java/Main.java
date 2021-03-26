@@ -4,6 +4,6 @@ public class Main {
         for (int i = 0; i < ms.length; i++) {
             ms[i] = 2 * i;
         }
-        BinarySearch.Search(ms, 0, ms.length, 246);
+        BinarySearch.Search(ms, 0, ms.length, 546);
     }
 }
