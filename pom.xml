@@ -9,10 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>firstModule</module>
+        <module>FirstModule</module>
         <module>SecondModule</module>
-        <module>FirstModule</module>
-        <module>FirstModule</module>
     </modules>
 
     <properties>
@@ -20,16 +18,18 @@
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.2.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.30</version>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.30</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
